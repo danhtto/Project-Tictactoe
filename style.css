@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alexandria&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    border: solid 2px white;
+
+}
+
+
+/* styling for header */
+.header {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    height: 30%;
+    border-bottom: 5px solid black;
+    align-items: center;
+    justify-items: center;
+}
+.header button{
+    cursor: pointer;
+    color: black;
+    font-size: 30px;
+    width: 50%;
+    border-style: none;
+    border-radius: 10px;
+}
+
+.player1, .player2 {
+    display: grid;
+    width: 100%;
+    font-size: 40px;
+    font-weight: 800;
+    text-align: center;
+    gap: 10px;
+    justify-items: center;
+}
+.scoreboard {
+    font-family: 'Alexandria', sans-serif;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    width: 100%;
+    font-size: 4rem;
+}
+#right, #left {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    align-items: center;
+    text-align: center;
+}
+#right {
+    border-left: solid black 5px;
+}
+
+/* styling for gameboard */
+
+.main{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    padding-top: 1.5rem;
+}
+
+.gameboard {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    width: 500px;
+    height: 500px;
+    gap: 5px;
+}
+.gameboard button {
+    cursor: pointer;
+    border: solid black 2px;
+    border-radius: 5px;
+    font-size: 5rem;
+}
+
+
+
+
