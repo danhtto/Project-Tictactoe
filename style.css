@@ -49,8 +49,38 @@ body {
     font-weight: 800;
     text-align: center;
     gap: 10px;
-    justify-items: center;
 }
+
+.player1 .buttons button.active {
+    border: 2.5px solid lightblue;
+}
+.player2 .buttons button.active {
+    border: 2.5px solid lightcoral;
+}
+.player1 .buttons button.active,
+.player2 .buttons button.active {
+    background-color: white;
+    box-shadow: 2px 2px 2px gray;
+}
+
+.middle {
+    display: grid;
+    width: 100%;
+    gap: 45px;
+}
+.middle .buttons {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+}
+.middle button {
+    width: 100%;
+}
+.middle button.start.active {
+    background-color: lightgreen;
+}
+
+
 .scoreboard {
     font-family: 'Alexandria', sans-serif;
     display: grid;
@@ -92,6 +122,10 @@ body {
     border-radius: 5px;
     font-size: 5rem;
 }
+.gameboard button.selected {
+    
+}
+
 
 
 
